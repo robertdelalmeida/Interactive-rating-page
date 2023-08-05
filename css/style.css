@@ -1,0 +1,136 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 17px;
+}
+
+.container {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: hsl(213, 19%, 18%);
+    padding: 24px 32px;
+    border-radius: 20px;
+    min-height: 420px;
+    max-width: 420px;
+}
+
+.container #feedback img {
+    background-color: hsl(213, 19%, 24%);
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 13px;
+    border-radius: 50px;
+}
+
+.container #feedback h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+.container #feedback p {
+    margin-top: 15px;
+    color: hsl(216, 12%, 54%);
+    line-height: 25px;
+}
+
+.container #feedback .ratingButtons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.container #feedback .ratingButtons input[type='radio'] {
+    position: absolute;
+    opacity: 0;
+}
+
+.container #feedback .ratingButtons li {
+    border-radius: 50%;
+    display: list-item;
+    text-align: initial;
+}
+.container #feedback .ratingButtons li label {
+    cursor: pointer;
+    display: inline-block;
+    background-color: hsl(213, 19%, 23%);
+    color: hsl(217, 12%, 63%);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.container #feedback .ratingButtons input:hover + label,
+.container #feedback .ratingButtons input:focus + label {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(216, 12%, 54%);
+}
+
+.container #feedback .ratingButtons input:checked + label {
+    background-color: hsl(25, 97%, 53%);
+}
+
+
+.container #feedback #sendButton {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.container #feedback #sendButton:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+#thankYou {
+    display: none;
+    text-align: center;
+}
+  
+#thankYou img {
+    margin: 25px auto;
+}
+
+#thankYou p:last-child {
+    margin-top: 15px;
+    color: hsl(216, 12%, 54%);
+    line-height: 25px;
+}
+
+#thankYou h2 {
+    color: hsl(0, 0%, 100%);
+}
+  
+.message {
+    background-color: hsl(213, 19%, 23%);
+    color: hsl(25, 97%, 53%);
+    padding: 8px;
+    border-radius: 20px;
+    width: 60%;
+    margin: 0 auto 20px;
+}
